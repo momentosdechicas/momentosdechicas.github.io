@@ -1,0 +1,86 @@
+@import url(style.css);
+
+/*estilos de la seccion portada*/
+
+#portada {
+    background-color: var(--coloramarillo);
+}
+
+
+.foto_portada {
+    display: flex;
+
+    & img {
+        width: auto;
+        height: 850px;
+    }
+}
+
+
+.logo {
+    & img {
+        width: auto;
+        height: 55px;
+    }
+}
+
+.bolsadecompras {
+    & img {
+        width: auto;
+        height: 65px;
+    }
+}
+
+.textos_portada h2 span {
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.textos_portada h2 {
+    line-height: 1.2;
+}
+
+.portada {
+    display: flex;
+    background-image: url("../IMAGE/FOTOPORTADAFONDOTRANSPARENTE.png");
+    height: calc(100vh - 118px);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    padding: 100px 200px;
+
+    & .foto_portada {
+        width: 100%;
+        height: auto;
+    }
+
+    & .boton_producto {
+        position: absolute;
+        bottom: 0%;
+        left: 20%;
+        padding: 25px;
+    }
+}
+
+.productos_titulo h6 {
+    text-align: center;
+    color: var(--colorazul);
+    padding: 15px 15px;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    & p {
+        text-align: center;
+    }
+}
+
+.servicio_foto img {
+    width: 100%;
+    height: auto;
+}

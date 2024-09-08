@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*rootear la pagina*/
+:root {
+    --colorprincipal: #FA0082;
+    --colorsecundario: #FFA3D3;
+    --colornegroazulado: #191216;
+    --coloramarilloclaro: #FFE3A1;
+    --coloramarillo: #FFB100;
+    --colorrosapastel: #FCE9E4;
+    --colorgrisclaro: #F5F5F5;
+    --colorgrisoscuro: #3F3F40;
+    --colornegro: #000000;
+    --colorblanco: #FFFFFF;
+
+    --fontheebo: "Heebo", sans-serif;
+    --fontmontserrat: "Montserrat", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--fontmontserrat);
+    font-family: var(--fontheebo);
+    font-size: 16px;
+}
+
+/*estilo de toda la pagina*/
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var(--fontheebo);
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 0px;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 500px;
+    font-family: var(--fontmontserrat);
+
+}
+
+.btn1 {
+    background-color: var(--colorsecundario);
+    color: var(--colornegro);
+    width: 180px;
+    padding: 10px 2px;
+    font-size: 1.80rem;
+
+}
+
+.btn1:hover {
+    background-color: var(--coloramarillo);
+    color: var(--colorblanco);
+}
+
+
+.btn2 {
+    background-color: var(--colorprincipal);
+    color: var(--colornegro);
+}
+
+.btn3 {
+    background-color: var(--colorprincipal);
+    color: var(--colorblanco);
+    border: 2px solid var(--colorprincipal);
+    border-radius: 50px;
+    padding: 1px 25px;
+    width: 165px;
+    font-size: 0.75rem;
+    font-family: var(--fontheebo);
+}
+
+.btn3:hover {
+    background-color: var(--colorblanco);
+    color: var(--colornegro);
+    border: 2px solid var(--colornegro);
+}
+
+.btn4 {
+    background-color: var(--colorprincipal);
+    color: var(--colorblanco);
+    border-radius: 50px;
+    padding: 3px 40px;
+    font-family: var(--fontheebo);
+}
+
+.btn4:hover {
+    background-color: var(--colorblanco);
+    color: var(--colornegro)
+}
+
+.container {
+    padding: 0px 80px;
+
+}
+
+.grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+}
+
+.grid_3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+}
+
+@media (max-width: 767px) {
+
+    /* Contenedor */
+    .container {
+        padding: 80px 50px;
+    }
+
+
+
+    /* Modificar tamaño de h */
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 3rem;
+        font-weight: 500;
+        font-family: var(--fontheebo);
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    /* Modificar 2 columnas a 1 columna */
+
+    .grid_2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 80px;
+    }
+
+    .grid_3 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 50px;
+    }
+}
